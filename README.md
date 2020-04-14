@@ -5,10 +5,10 @@ Adidas Interview - Carol Bohorquez
 1. Maven and Java installed and configured
 
 # How to Run
-To execute the tests just clone the project and if all the requirements are done, go to the root folder of the clone project and type 'mvn clean verify' this will run all the tests.
+To execute the tests just clone the project and if all the requirements are done, go to the root folder of the clone project and type `$ mvn clean verify ` this will run all the tests.
 
 # Report 
-When the execution finishes you can find the project on {PROJECT_DIRECTORY}/target/site/serenity/index.html.
+When the execution finishes you can find the project on `$ {PROJECT_DIRECTORY}/target/site/serenity/index.html. `
 
 # Approach
 
@@ -20,4 +20,18 @@ The reason to choose these tools stack is because I have more experience using t
 ## API choice:
 The user API has operations that can be performed with the user, but these operations are not related to the other APIs, likewise, the other APIs are not related to information regarding a user in order to function, for this reason, from a business perspective and considering the priorities, the user API is not critical to the operation of PetStore.
 
-Store API is related to the pet's information, therefore, the pet's information must exist to be able to use the services of “/ store / order” and “/ store / inventory”, however, it is in exploratory tests that I made to understand better the APIS I could see that an order can be created with a request that does not exist, more however I find that the Pets API is necessary for the Store api to work correctly, that's why I chose the Pets api as API criticizes for testing.
+Store API is related to the pet's information, therefore, the pet's information must exist to be able to use the services of *“/store/order”* and *“/store/inventory”*, however, it is in exploratory tests that I made to understand better the APIS I could see that an order can be created with a request that does not exist, more however I find that the Pets API is necessary for the Store api to work correctly, that's why I chose the Pets api as API criticizes for testing.
+
+For testing, I separated the main funcoinalities in order to have more control in the code, to make it easier to read both the code and the report and also to make it easier to add more test cases.
+
+  | FEATURES |
+  | ----- |
+  | Create |
+  | Find |
+  | Update |
+  | Delete|
+    
+# Test node document
+
+You can find the document on `$ {PROJECT_DIRECTORY}/src/test/resoruces/testnote.md`
+
