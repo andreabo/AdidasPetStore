@@ -33,5 +33,5 @@ For testing, I separated the main funcoinalities in order to have more control i
     
 # Test node document
 
-You can find the document on `$ {PROJECT_DIRECTORY}/src/test/resoruces/testnote.md`
+You can find the document on `$ {PROJECT_DIRECTORY}/src/test/resoruces/testNotes.md`
 
